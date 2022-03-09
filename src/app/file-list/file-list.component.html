@@ -1,0 +1,15 @@
+<h3>Files : {{Files?.length}}</h3>
+<div  class="container"
+  infiniteScroll
+  [infiniteScrollDisabled]="isFullListDisplayed"
+  [infiniteScrollDistance]="(pageNo-1 )* limit"
+  [infiniteScrollThrottle]="limit"
+  (scrolled)="onScrollDown()"
+  (scrolledUp)="onScrollUp()"
+>
+  <div *ngFor="let file of Files" class="image-container" >
+    <a [href]="file.imagelUrl">
+      <img [src]="file.thumbnailUrl" />
+    </a>
+  </div>
+</div>
