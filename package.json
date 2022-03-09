@@ -1,0 +1,24 @@
+{
+  "name": "crowler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/script.js",
+  "bin": {
+    "load-files": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.0",
+    "image-thumbnail": "^1.0.13",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  }
+}
